@@ -36,6 +36,6 @@ Users should be able to:
 
 ### Built with
 
-- HTML
+- Semantic HTML5 markup
 - CSS Grid
 - Javascript
