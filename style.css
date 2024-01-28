@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body,
+button {
+  background-color: hsl(234, 29%, 20%);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.container-2 {
+  height: 400px;
+  padding: 50px;
+  border-radius: 30px;
+  display: none;
+}
+
+.container-2,
+.left,
+.right {
+  width: 400px;
+}
+
+
+.container-1,
+.container-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.left,
+.right {
+  padding: 15px;
+}
+
+.container-1-content {
+  font-size: 14px;
+  width: 350px;
+  margin-left: 3em;
+}
+
+.container-1-content h2 {
+  margin-top: 1.5em;
+}
+
+.container-2-content {
+  margin-top: -1em;
+  margin-left: 1em;
+}
+
+h2 {
+  font-size: 52.5px;
+}
+
+.container-1-content p {
+  margin-top: -2em;
+  margin-bottom: 2em;
+}
+
+.container-2-content p {
+  width: 90%;
+  margin-top: -1.5em;
+  font-size: xx-small;
+}
+
+li {
+  list-style: none;
+  margin-left: -3em;
+}
+
+li {
+  line-height: 2.2em;
+}
+
+li label {
+  margin-left: 0.7em;
+}
+
+li img + label {
+  vertical-align: super;
+}
+
+.email-div label + input {
+  display: block;
+}
+
+.email-div {
+  margin-top: 2.5em;
+}
+
+#email {
+  margin-top: 0.25em;
+  width: 92.5%;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+
+button {
+  width: 93%;
+  margin-top: 2em;
+  color:hsl(0, 0%, 100%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#email,
+button {
+  padding: 15px 0;
+  border-radius: 5px;
+}
+
+#email,
+#email::placeholder {
+  text-indent: 15px;
+}
