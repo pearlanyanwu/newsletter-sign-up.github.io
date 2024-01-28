@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://pearlanyanwu.github.io/newsletter-sign-up.github.io/]
 
 ## My process
 
