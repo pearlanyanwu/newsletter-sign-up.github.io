@@ -6,50 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer> </script>
-  <title> Newsletter Sign-Up (with Success Message) </title>
+  <title> Newsletter Sign-Up </title>
 </head>
 
 <body>
-  <div class="container-1">
-    <div class="left">
-      <div class="container-1-content">
-        <h2> Stay updated! </h2>
-        <p> Join 60,000+ product managers receiving monthly updates on: </p>
-
-        <ul>
-          <li> <img src="images/icon-list.svg" alt="little-checkmark-icon.svg">
-            <label> Product discovery and building what matters </label>
-          </li>
-          <li> <img src="images/icon-list.svg" alt="little-checkmark-icon.svg">
-            <label> Measuring to ensure updates are a success </label>
-          </li>
-          <li> <img src="images/icon-list.svg" alt="little-checkmark-icon.svg">
-            <label> And much more! </label>
-          </li>
-        </ul>
-
-        <div class="email-div">
-          <strong> Email address </strong>
-          <input type="email" id="email" placeholder="email@company.com" autocomplete="off">
-        </div>
-
-        <button id="subscribe-button"> Subscribe to monthly newsletter </button>
-      </div>
+  <div class="flex-container">
+    <div class="image-div">
+      <img src="images/illustration-sign-up-mobile.svg" alt="hero-mobile.svg" id="image">
     </div>
 
-    <div class="right">
-      <img src="images/illustration-sign-up-desktop.svg" alt="pic.svg">
+    <div class="text-div">
+      <h2> Stay updated! </h2>
+      <p> Join 60,000+ product managers receiving monthly updates on: </p>
+      <ul>
+        <li>
+          <img src="images/icon-list.svg" alt="small-checkmark.svg">
+          <label> Product discovery and building what matters </label>
+        </li>
+        <li>
+          <img src="images/icon-list.svg" alt="small-checkmark.svg">
+          <label> Measuring to ensure updates are a success </label>
+        </li>
+        <li>
+          <img src="images/icon-list.svg" alt="small-checkmark.svg">
+          <label> And much more! </label>
+        </li>
+      </ul>
+      <div class="email-div">
+        <p> Email address </p>
+        <input type="email" id="email" placeholder="email@company.com" autocomplete="off">
+      </div>
+      <button id="subscribe-button"> Subscribe to monthly newsletter </button>
     </div>
   </div>
 
   <div class="container-2">
-    <div class="container-2-content">
-      <img src="images/icon-success.svg" alt="big-checkmark-icon.svg">
-      <h2> Thanks for subscribing! </h2>
-      <p> A confirmation email has been sent to <span id="verified-email"></span>. Please open it and click the button
-        inside to confirm your subscription. </p>
-      <button id="dismiss-button"> Dismiss message </button>
-    </div>
+    <img src="images/icon-success.svg" alt="big-checkmark-icon.svg" height="60">
+    <h2> Thanks for subscribing! </h2>
+    <p> A confirmation email has been sent to <span id="verified-email"></span>.
+      Please open it and click the button inside to confirm your subscription. </p>
+    <button id="dismiss-button"> Dismiss message </button>
   </div>
 </body>
 

@@ -2,7 +2,7 @@ var email = document.getElementById("email");
 const regex = /^([a-zA-Z0-9_]+@[a-zA-Z]+\.[a-z]{3})$/;
 var validEmail = document.getElementById("verified-email");
 const submitButton = document.getElementById("subscribe-button");
-const container1 = document.getElementsByClassName("container-1")[0];
+const container1 = document.getElementsByClassName("flex-container")[0];
 const container2 = document.getElementsByClassName("container-2")[0];
 
 submitButton.addEventListener("click", () => {

@@ -1,129 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body,
+body {
+  margin: 0;
+}
+
 button {
-  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
 }
 
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-.container-1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+.flex-container,
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.text-div,
+.container-2 {
+  padding: 0 30px;
 }
 
 .container-2 {
-  height: 400px;
-  padding: 50px;
-  border-radius: 30px;
+  padding-top: 20px;
+  height: 900px;
   display: none;
 }
 
-.container-2,
-.left,
-.right {
-  width: 400px;
-}
-
-
-.container-1,
-.container-2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: hsl(0, 0%, 100%);
-}
-
-.left,
-.right {
-  padding: 15px;
-}
-
-.container-1-content {
-  font-size: 14px;
-  width: 350px;
-  margin-left: 3em;
-}
-
-.container-1-content h2 {
-  margin-top: 1.5em;
-}
-
-.container-2-content {
+.container-2 p {
   margin-top: -1em;
-  margin-left: 1em;
 }
 
 h2 {
-  font-size: 52.5px;
+  font-size: 2.5rem;
 }
 
-.container-1-content p {
-  margin-top: -2em;
-  margin-bottom: 2em;
-}
-
-.container-2-content p {
-  width: 90%;
-  margin-top: -1.5em;
-  font-size: xx-small;
+ul {
+  margin: 30px 0;
 }
 
 li {
   list-style: none;
-  margin-left: -3em;
+  line-height: 1.6em;
+  margin: 0.5em 0;
 }
 
-li {
-  line-height: 2.2em;
+li > img {
+  margin-left: -2.5em;
 }
 
-li label {
+li > label {
   margin-left: 0.7em;
 }
 
-li img + label {
-  vertical-align: super;
-}
-
-.email-div label + input {
-  display: block;
+li > img + label {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .email-div {
-  margin-top: 2.5em;
+  margin-top: 3em;
+}
+
+.email-div p {
+  font-size: 0.5rem;
+  font-weight: 700;
 }
 
 #email {
-  margin-top: 0.25em;
-  width: 92.5%;
-  border: 1px solid hsl(231, 7%, 60%);
+  border: 1px solid hsla(231, 7%, 60%, 0.3);
+}
+
+#email,
+button {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
+#email,
+#email::placeholder {
+  text-indent: 20px;
+}
+
+#subscribe-button {
+  margin-top: 2em;
+  border-style: none;
+}
+
+#dismiss-button {
+  margin-top: 40em;
 }
 
 button {
-  width: 93%;
-  margin-top: 2em;
-  color:hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
 }
 
 button:hover {
   cursor: pointer;
 }
 
-#email,
-button {
-  padding: 15px 0;
-  border-radius: 5px;
-}
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+  }
 
-#email,
-#email::placeholder {
-  text-indent: 15px;
+  .flex-container {
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    max-width: 70%;
+    height: 600px;
+  }
+
+  .flex-container,
+  .container-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  #image {
+    content: url("images/illustration-sign-up-desktop.svg");
+  }
+
+  .text-div {
+    padding: 5px 60px;
+  }
+
+  .text-div h2 {
+    font-size: 3.5rem;
+  }
+
+  .text-div p {
+    margin-top: -1.2em;
+  }
+
+  .email-div {
+    margin-top: 4em;
+  }
+
+  #subscribe-button {
+    margin-top: 1.75em;
+  }
+
+  .container-2 {
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+  }
+
+  #dismiss-button {
+    margin-top: 3em;
+  }
 }

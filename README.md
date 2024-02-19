@@ -6,7 +6,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,20 +21,17 @@ Users should be able to:
 - See form validation messages if:
   - The field is left empty
   - The email address is not formatted correctly
+- View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-
-### Screenshot
-
-![](screenshot.png)
 
 ### Links
 
-- Live Site URL: [https://pearlanyanwu.github.io/newsletter-sign-up.github.io/]
+- Live Site URL: https://pearlanyanwu.github.io/newsletter-sign-up.github.io/
 
 ## My process
 
 ### Built with
 
-- HTML
-- CSS Grid
+- Semantic HTML5 markup
+- CSS Flexbox
 - Javascript
