@@ -68,18 +68,19 @@ li > img + label {
 }
 
 .email-div p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
 #email {
   border: 1px solid hsla(231, 7%, 60%, 0.3);
+  margin-top: -0.7em;
 }
 
 #email,
 button {
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
   border-radius: 10px;
 }
 
@@ -89,7 +90,7 @@ button {
 }
 
 #subscribe-button {
-  margin-top: 2em;
+  margin-top: 1em;
   border-style: none;
 }
 
@@ -112,7 +113,6 @@ button:hover {
 
   .flex-container {
     flex-direction: row-reverse;
-    margin: 0 auto;
     max-width: 70%;
     height: 600px;
   }
